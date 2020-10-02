@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let group of events | groupByDate">{{group.date}}
+    <ul>
+      <li *ngFor="let event of group.events">{{event.id}} {{event.title}}</li>
+    </ul>
+  </li>
+</ul>
